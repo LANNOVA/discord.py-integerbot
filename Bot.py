@@ -25,6 +25,11 @@ async def multiply(ctx,a:int,b:int):
 @bot.command() 
 async def divide(ctx,a:int,b:int): 
     await ctx.send(f"{a} / {b} = {a/b}") #Divides A and B
-    
+  
+
+@bot.command() 
+async def divide(ctx,a:int,b:int): 
+    await ctx.send(f"{a**b}") #added exponents
+  
 bot.run(token_here)  #add the token and run  
     
